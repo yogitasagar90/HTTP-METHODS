@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>HTTP METHODS</title>
+
+</head>
+<style>
+    h1 {
+        text-align: center;
+        background-color: burlywood;
+        color: crimson;
+        padding: 18px 18px 18px 18px;
+    }
+
+    .container {
+        background-color: burlywood;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .form-group label{
+        color: crimson;
+        font-size: 30px;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <h1>HTTP : POST GET PATCH DELETE</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <form id="postForm">
+                    <div class="form-group">
+                        <div>
+                            <label for="title"><strong>Title :</strong></label>
+                            <input type="text" id="title" class="form-control mb-4">
+                        </div>
+                        <div>
+                            <label for="content"><strong>Content :</strong></label>
+                            <textarea rows="5" id="content" class="form-control"></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-primary mt-4" id="submitBtn" type="submit">Submit</button>
+                            <button class="btn btn-primary mt-4 d-none" id="updateBtn" type="button">Update</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="postContainer"></div>
+                <!-- <div class="card">
+                            <div class="card-header"></div>
+                            <div class="card-body"></div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </div>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./assest/js/app.js"></script>
+</body>
+
+</html>
